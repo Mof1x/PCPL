@@ -2,10 +2,6 @@ import sys
 
 
 class Equation:
-    a = None
-    b = None
-    c = None
-
     def __init__(self):
         self.a, self.b, self.c = self.input_data()
 
@@ -43,7 +39,7 @@ class Equation:
             if b == 0:
                 return []
             x = -c / b
-            return list({x ** 0.5, -x ** 0.5}) if x >= 0 else []
+            return list({   x ** 0.5, -x ** 0.5}) if x >= 0 else []
 
         d = self.D(a, b, c)
         if d < 0:
